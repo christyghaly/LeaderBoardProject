@@ -19,3 +19,6 @@ and the following are the pictures for the ui
 
 
 ![](https://github.com/christyghaly/LeaderBoardProjectUiImages/blob/master/not_success.png)
+
+
+![](https://github.com/christyghaly/LeaderBoardProjectUiImages/blob/master/success.png)
