@@ -4,7 +4,6 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitClient {
-   // public static final String BASE_GOOGLE_URL=" https://docs.google.com/forms/d/e/";
     public static  final String BASE_GOOGLE_URL="https://docs.google.com/forms/d/e/";
     private static  RetrofitClient mInstance;
     private static Retrofit mRetrofit;

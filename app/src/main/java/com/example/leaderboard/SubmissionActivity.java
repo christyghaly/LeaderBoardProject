@@ -9,9 +9,6 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
-
-import androidx.appcompat.widget.Toolbar;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
@@ -32,19 +29,7 @@ public class SubmissionActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-
         setContentView(R.layout.submit_activity);
-
-
-         EditText mFName=findViewById(R.id.first_name);
-         EditText mLName = findViewById(R.id.last_name);
-         EditText mEAddress = findViewById(R.id.email_address);
-         EditText mGitHubLink= findViewById(R.id.github_link);
-
-        mFstname = mFName.getText().toString();
-        mLstName = String.valueOf(mLName.getText());
-        mEmail = String.valueOf(mEAddress.getText());
-        mGitLink = String.valueOf(mGitHubLink.getText());
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.drawable.gadsimage);
@@ -67,6 +52,14 @@ public class SubmissionActivity extends AppCompatActivity {
     }
 
     private void submitResponse() {
+        EditText mFName=findViewById(R.id.first_name);
+        EditText mLName = findViewById(R.id.last_name);
+        EditText mEAddress = findViewById(R.id.email_address);
+        EditText mGitHubLink= findViewById(R.id.github_link);
+        mFstname = mFName.getText().toString();
+        mLstName = mLName.getText().toString();
+        mEmail = mEAddress.getText().toString();
+        mGitLink = mGitHubLink.getText().toString();
 
         final Dialog maindialog=new Dialog(this,android.R.style.Theme_Dialog);
         maindialog.requestWindowFeature(Window.FEATURE_NO_TITLE);

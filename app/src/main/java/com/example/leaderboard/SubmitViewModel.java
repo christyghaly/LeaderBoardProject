@@ -18,15 +18,15 @@ public class SubmitViewModel extends ViewModel {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                 if (response.isSuccessful())
-                    status.setValue(1);
+                    status.postValue(1);
                 else
-                    status.setValue(-1);
+                    status.postValue(-1);
 
             }
 
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
-                status.setValue(-1);
+                status.postValue(-1);
 
             }
         });

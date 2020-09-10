@@ -46,7 +46,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/rounded_corners"
                 android:gravity="center"
-                android:text="Submit"
+                android:text="@string/submit_text_name"
                 android:textAllCaps="false"
                 android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
                 android:textColor="@color/colorPrimary" />
