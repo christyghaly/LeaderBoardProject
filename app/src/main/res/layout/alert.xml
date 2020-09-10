@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corners"
+    android:backgroundTint="#FFFFFF">
+
+    <TextView
+        android:id="@+id/alert_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/are_you_sure"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/FragmentTextColor"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/alert_yes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/alert_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/alert_button"
+        android:paddingLeft="70dp"
+        android:paddingTop="@dimen/text_padding"
+        android:paddingRight="70dp"
+        android:paddingBottom="@dimen/text_padding"
+        android:text="Yes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/Orange"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
