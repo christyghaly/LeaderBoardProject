@@ -1,5 +1,5 @@
 # LeaderBoardProject
-It is a project that retrieves data from an online page using by parsing Json put the output in a RecyclerView and there is a 
+It is a project that retrieves data from an online page by parsing Json put the output in a RecyclerView and there is a 
 submission page that makes a connection to a given template of google form using retrofit and MVVM
 and the following are the pictures for the ui
 
